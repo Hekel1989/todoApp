@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-// app.use(express.static('./public'));
+app.use(express.static('./public'));
 
 // fire controllers
 todoController(app);
